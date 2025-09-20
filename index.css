@@ -1,0 +1,245 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('./back3.jpg'); /* adjust path if needed */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    overflow: hidden;
+}
+.navBar{
+    height:10vh;
+    background-color: black;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchbardiv{
+    width:50%;
+    height:fit-content;
+    position: relative;
+}
+.inputfield{
+    width: 100%;
+    border-radius: 15px;
+    padding: 10px;
+}
+.searchimg{
+    border-radius: 50%;
+    position: absolute;
+    right:20px;
+    margin-top: 8px;
+    cursor:pointer
+}
+.maincontentParent{
+    height: 90vh;
+    flex-direction: row;
+}
+.leftdiv{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.leftchild{
+    background-color: rgb(212,212,212,0.4);
+    height: 40vh;
+    width:85%;
+    margin:auto;
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+}
+.temperature h6{
+    font-size: x-large;
+}
+#cityname{
+    font-size: xxx-large;
+}
+#temp{
+    font-size: xx-large;
+}
+#comingfivedays{
+    font-size: xx-large;
+}
+.forecast h6{
+    font-size: large;
+}
+.rightdiv{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 10px;
+}
+.rightrow{
+    width:100%;
+    height: 27vh;
+    /* border: 2px white solid; */
+}
+.metric{
+    background-color: rgb(212,212,212,0.4);
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+    padding: 4.5% 4%;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+.rowone h6{
+    font-size: xx-large;
+}
+.rowtwodiv{
+    background-color: rgb(212,212,212,0.4);
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+    width:47%;
+    height:80%
+}
+.rowtwodiv h6{
+    font-size: x-large;
+}
+.rowtwodiv h5{
+    font-size: xx-large;
+}
+#aqid{
+    font-size: xx-large;
+}
+.sunrise{
+    width: 50vh;
+    margin-right:150px
+}
+.innerweather{
+    background-color: rgb(212,212,212,0.4);
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+    width:fit-content;
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.innerweather h6{
+    font-size: x-large;
+}
+.weathercast{
+    padding-top:10px;
+}
+.rowthree h5{
+    font-size: xx-large;
+}
+.inputfield{
+    outline:none;
+}
+/* @media only screen and (max-width:757px) {
+    .leftdiv{
+        margin-top: 10px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .rightdiv{
+        width: 100%;
+    }
+    .maincontentParent{
+        flex-direction: column;
+    }
+    .navBar{
+        width: 100%;
+    }
+    .searchbardiv{
+        width: 80%;
+    }
+    .rowone{
+        margin-top:20px;
+        flex-wrap: wrap;
+        width: 85%;
+        margin:auto;
+    }
+} */
+@media only screen and (max-width: 767px) {
+    body {
+      overflow: auto; /* Allow scroll on small devices */
+    }
+  
+    .maincontentParent {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .leftdiv,
+    .rightdiv {
+      width: 100%;
+      margin: 0;
+    }
+  
+    .leftchild {
+      width: 90%;
+      height: auto;
+      margin-top: 15px;
+    }
+  
+    .temperature,
+    .nextfivedays {
+      gap: 10px;
+    }
+  
+    .rightrow {
+      flex-direction: column !important;
+      height: auto;
+      gap: 15px;
+      margin-top: 15px;
+    }
+  
+    .rowtwodiv {
+      width: 90% !important;
+      height: auto;
+    }
+  
+    .sunrise {
+      width: 90% !important;
+      margin-right: 0;
+    }
+  
+    .metric {
+      width: 90% !important;
+      justify-content: center;
+      padding: 5% 3%;
+    }
+  
+    .rowone {
+      flex-wrap: wrap;
+      justify-content: center !important;
+      gap: 10px;
+    }
+  
+    .innerweather {
+      width: 80px;
+      padding: 8px;
+      gap: 5px;
+      margin-bottom: 0;
+    }
+  
+    .weathercast {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+  
+    .navBar {
+      height: auto;
+      padding: 10px 0;
+    }
+  
+    .searchbardiv {
+      width: 80%;
+    }
+  }
+  
+
